@@ -1,6 +1,3 @@
-console.log("Client Side loaded");
-//console sa server
-
 ///////////fetch data API // fetch data in the app
 
 const weatherForm = document.querySelector("form");
