@@ -136,6 +136,7 @@ const geoCode = require("./utils/geoCode");
 const forecast = require("./utils/forecast");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //customize location of the index or hbs files define paths
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -239,6 +240,6 @@ app.get("*", (req, res) => {
 
 /////server start
 
-app.listen(3000, () => {
-  console.log("Server is Up on port 3000");
+app.listen(port, () => {
+  console.log("Server is Up on port" + port);
 });
